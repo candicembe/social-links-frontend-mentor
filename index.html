@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: black;
+      font-family :Inter, arial;
+      
+    }
+    .general {
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width:400px;
+      height: 700px;
+      margin-left:auto; 
+      margin-right:auto;
+      margin-top:150px;
+      border-radius: 15px;
+      padding-bottom: 40px;
+    }
+    @media(max-width:750px) {
+
+      .general { 
+        width:375px;
+        margin-bottom:80px;
+
+      }
+    }
+    @media(max-width:751px) and (min-width: 999px) {
+      .general{
+        width:600px;
+        margin-bottom:100px
+
+      }
+
+    }
+    @media(min-width:1000px) {
+      .general {
+        width:800px;
+        margin-top: 200px;
+        margin-bottom:200px;;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .pp {
+        margin-top:-30px;
+      }
+      .pp-avatar {
+        width:100px;
+        height:100px;
+        border-radius:50px;
+        margin-top:-30px;
+
+      }
+      .bouton {
+        height:60px;
+        padding: 20px 250px 20px 200px;
+        margin-top:10px;
+        
+
+        
+      }
+      .description {
+        font-size:20px;
+        
+      }
+     
+    
+    }
+
+    .pp {
+      padding: 40px 100px 20px 100px;
+    }
+    .pp-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+    }
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .name {
+      font-size:25px;
+      color: white;
+      padding-bottom: 10px;
+    }
+    .place {
+      font-size:14px;
+      font-weight: 400;
+      color:hsl(75, 94%, 57%);
+      padding-bottom:20px;
+      margin-bottom:8px;
+    }
+    .description {
+      color:white;
+      font-weight: 400;
+      font-size:14px;
+      margin-bottom: 30px;
+    }
+    .lien {
+      display: flex;
+      flex-direction: column;  
+    }
+    .bouton {
+      background-color: hsl(0, 0%, 20%);
+      color: white;
+      margin-bottom: 15px;
+      width: 280px;
+      padding-top: 13px;
+      padding-bottom:13px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      
+    }
+    .bouton:hover {
+      background-color: hsl(75, 94%, 57%);
+      color:black;
+    }
+    .attribution {
+      color:white;
+      font-size :10px;
+    }
+  </style>
+ 
+</head>
+<body>
+  <div class="general">
+    <div class="pp">
+      <img class="pp-avatar" src="assets/images/avatar-jessica.jpeg">
+    </div>
+
+    <div class="presentation">
+      <div class="name">
+        Jessica Randall
+      </div>
+      <div class="place">
+        London, United Kingdom
+      </div>  
+      <div class="description">
+        "Front-end developer and avid reader."
+      </div>
+    </div>
+
+    <nav class="lien">
+      <button class="bouton">GitHub</button>
+      <button class="bouton">Frontend Mentor</button>
+      <button class="bouton">LinkedIn</button>
+      <button class="bouton">Twitter</button>
+      <button class="bouton">Instagram</button> 
+    </nav>
+
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Candice</a>.
+  </div>
+</body>
+</html>
